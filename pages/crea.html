@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css" />
+    <script src="crea.js"></script>
+    <link rel="icon" href="../icon/robotblack.webp">
+    <title>Tiy Captcha</title>
+</head>
+<body>
+    <nav class="menu-container">
+        <!-- burger menu -->
+        <input type="checkbox" aria-label="Toggle menu" />
+        <span></span>
+        <span></span>
+        <span></span>
+    
+        <!-- logo -->
+        <a href="../index.html" class="menu-logo">
+          <img src="../icon/robot.webp"
+            alt="My Awesome Website" />
+        </a>
+    
+        <!-- menu items -->
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="../index.html"> Home </a>
+            </li>
+            <li>
+              <a href="./crea.html"> Crea </a>
+            </li>
+    
+            <li>
+              <a href="https://tsazs.github.io/TsazSite/index.html"> TSAZ </a>
+            </li>
+          </ul>
+          <ul>
+            
+          </ul>
+        </div>
+      </nav>
+  
+        <center><img src="../icon/logo-no-background.svg">
+       
+        <div class="main-block">
+            <div class="left-part">
+              <i class="fas fa-envelope"></i>
+              <i class="fas fa-at"></i>
+              <i class="fas fa-mail-bulk"></i>
+            </div>
+            <form action="/">
+              <h1>Crea il tuo captcha personalizzato</h1>
+              <div class="info">
+                <input class="fname" type="text" name="name" placeholder="Intestazione" id="intestazione">
+                <input type="text" name="name" placeholder="Icona (in url)" id="icon">
+                
+              </div>
+              <div>
+                <textarea rows="4" placeholder="Messaggio di verifica" id="verifica"></textarea>
+              </div>
+              <button class="btn" type="button" onclick="generate()" style="cursor: pointer;">Submit</button>
+            </form>
+          </div>
+        </center>
+    <center>
+        <textarea id="code" disabled="true">Codice da generare</textarea>
+        
+    </center>
+</body>
+</html>
